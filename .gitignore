@@ -1,0 +1,35 @@
+# # tex related files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.lo*
+*.maf
+*.mtc
+*.mtc0
+*.mtc*
+*.out
+*.pdf
+*.synctex.gz
+*.toc
+*.bak
+*.acn
+*.dvi
+*.glo
+*.gli
+*.gls
+*.ilg
+*.ist
+
+# # other files for to ignore.
+*~
+*.pyc
+.idea/*
+*.egg-info/*
+*tmp*.py
+*tmp*
+*.*.backup
+**/__pycache__/
+**/results/
+**/.ipynb_checkpoints/
+
