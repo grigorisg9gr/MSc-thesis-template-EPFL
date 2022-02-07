@@ -68,7 +68,7 @@
 
 % numbering of chapter, section, table, figure, and equation:
 \renewcommand{\thechapter}      {\arabic{chapter}}
-\renewcommand{\thesection}      {\thechapter.\arabic{section}}
+\renewcommand{\thesection}      {\arabic{section}}
 \renewcommand{\thesubsection}   {\thesection.\arabic{subsection}}
 \renewcommand{\thetable}        {\thechapter.\arabic{table}}
 \renewcommand{\thefigure}       {\thechapter.\arabic{figure}}
@@ -89,8 +89,8 @@
 %\trimXmarks                             % To use corners for trimming
 %\leavespergathering{8}					% If specific # of pages required by publisher
 
-\maxsecnumdepth{subsection}             % Section numbering depth
-\maxtocdepth{section}                   % Table of contents depth
+%\maxsecnumdepth{subsection}             % Section numbering depth
+%\maxtocdepth{section}                   % Table of contents depth
 
 \newcommand {\halfendline}  {\\[5pt]}   % Endlines
 \newcommand {\fullendline}  {\\[11pt]}
@@ -126,24 +126,6 @@
 \makeoddhead{TUDelft}{}{}{\normalfont\slshape\rightmark}
 \makeevenfoot{TUDelft}{\slshape\thepage}{}{}
 \makeoddfoot{TUDelft}{}{}{\slshape\thepage}
-
-\makepagestyle{FooterOnly}
-\makerunningwidth{FooterOnly}{\textwidth}
-\makeheadposition{FooterOnly}{}{}{}{}
-%\makeheadrule{FooterOnly}{\textwidth}{\normalrulethickness}
-\makepsmarks{FooterOnly}{\@ruledmarks}
-\makeevenhead{FooterOnly}{}{}{}
-\makeoddhead{FooterOnly}{}{}{}
-\makeevenfoot{FooterOnly}{\slshape\thepage}{}{}
-\makeoddfoot{FooterOnly}{}{}{\slshape\thepage}
-
-\copypagestyle{TUDedication}{empty}
-\makeevenfoot{TUDedication}{}{}{}
-\makeoddfoot{TUDedication}{}{}{\slshape\thepage}
-
-\copypagestyle{TUDchapter}{TUDelft}
-\makeheadrule{TUDchapter}{\textwidth}{0em}
-\makeoddfoot{TUDchapter}{}{}{\slshape\thepage}
 
 
 
