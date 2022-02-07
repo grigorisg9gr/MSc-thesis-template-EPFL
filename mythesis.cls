@@ -4,6 +4,7 @@
 %% ========================== Default Values ========================== %%
 
 \newcommand*{\@university}{École Polytechnique Fédérale de Lausanne (EPFL)}
+\newcommand*{\@lab}{Laboratory for Information and Inference Systems (LIONS)}
 \newcommand*{\@college}{}
 \newcommand*{\@department}{}
 \newcommand*{\@field}{}
@@ -19,6 +20,7 @@
 %% ========================== User Variables ========================== %%
 
 \newcommand*{\university}[1]{\gdef\@university{#1}}
+\newcommand*{\lab}[1]{\gdef\@lab{#1}}
 \newcommand*{\department}[1]{\gdef\@department{#1}}
 \newcommand*{\field}[1]{\gdef\@field{#1}}
 \newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
@@ -202,6 +204,7 @@
   \ifx\@university\@empty \else \@university\par\fi
   \@college
   \ifx\@department\@empty \else \par Department of \@department\fi
+  \ifx\@lab\@empty \else \@lab\par\fi
  \end{minipage}
  \noindent\begin{minipage}[b]{\textwidth}
   \centering
