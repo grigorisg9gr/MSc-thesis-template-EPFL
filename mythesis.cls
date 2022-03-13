@@ -47,13 +47,14 @@
 \usepackage{xcolor}
 \RequirePackage[pdftex]{graphicx}
 \RequirePackage[pdftex,unicode,pagebackref=true,
- %colorlinks=true,citecolor=Black,linkcolor=Black,
- colorlinks=true,citecolor=PineGreen,
+ % citecolor=Black,linkcolor=Black,
+ colorlinks=true,
  pdffitwindow=true,
  pdfpagemode=UseNone,pdfpagelabels,
  plainpages=false,breaklinks=true] { hyperref}
 %\fixpdflayout
 %\usepackage{memhfixc}
+\usepackage{chngcntr}
 	
 %% ============================ Page geometry ============================= %%
 
@@ -72,9 +73,9 @@
 \renewcommand{\thechapter}      {\arabic{chapter}}
 \renewcommand{\thesection}      {\arabic{section}}
 \renewcommand{\thesubsection}   {\thesection.\arabic{subsection}}
-\renewcommand{\thetable}        {\thechapter.\arabic{table}}
-\renewcommand{\thefigure}       {\thechapter.\arabic{figure}}
-\renewcommand{\theequation}     {\thechapter.\arabic{equation}}
+%\renewcommand{\thetable}        {\arabic{table}}
+%\renewcommand{\thefigure}       {\arabic{figure}}
+\renewcommand{\theequation}     {\arabic{equation}}
 
 % redefine some standard LaTeX words
 \def\captionsenglish{
@@ -91,7 +92,7 @@
 %\trimXmarks                             % To use corners for trimming
 %\leavespergathering{8}					% If specific # of pages required by publisher
 
-%\maxsecnumdepth{subsection}             % Section numbering depth
+\maxsecnumdepth{subsection}             % Section numbering depth
 %\maxtocdepth{section}                   % Table of contents depth
 
 \newcommand {\halfendline}  {\\[5pt]}   % Endlines
