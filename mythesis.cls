@@ -38,7 +38,7 @@
 %% =========================== Packages used ============================== %%
 \RequirePackage[left=4.2cm,right=4.2cm,top=2.97cm,bottom=5.94cm]{geometry}
 \RequirePackage{ucs}
-\RequirePackage[utf8x]{inputenc}
+%\RequirePackage[utf8x]{inputenc}
 \RequirePackage[british]{babel}                % To use English hyphenation.
 %\usepackage{multicol,multirow}
 %\usepackage{microtype}
